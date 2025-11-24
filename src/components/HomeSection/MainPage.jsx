@@ -19,14 +19,14 @@ export default function HeroSection() {
           Your trusted travel partner for unforgettable experiences.
         </p>
 
-        <div className="flex items-center justify-center space-x-4">
+        <div className="flex items-center justify-center md:space-x-4 space-x-1">
           <Link to="/packages">
-          <button className="h-[44px] w-[168px] bg-[rgba(244,156,11,1)] hover:bg-[rgba(220, 189, 139, 1)] rounded-md font-semibold transition">
+          <button className="h-[44px] md:w-[168px] w-[140px] bg-[rgba(244,156,11,1)] hover:bg-[rgba(220, 189, 139, 1)] rounded-md font-semibold transition">
             explore packages
           </button>
           </Link>
 
-          <button className="h-[44px] w-[168px] border border-white bg-transparent hover:bg-white hover:text-black rounded-md font-semibold transition">
+          <button className="h-[44px] md:w-[168px] w-[140px] border border-white bg-transparent hover:bg-white hover:text-black rounded-md font-semibold transition">
             Plan Your Trip
           </button>
         </div>
