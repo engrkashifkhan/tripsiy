@@ -507,7 +507,7 @@ Booking ID: ${generateRandomId(10)}
                 <p className="text-gray-600 text-lg mt-2">{packageItem.desc}</p>
               </div>
 
-              <div className="text-right">
+              <div>
                 <p className="text-2xl font-bold text-orange-300">
                   from ${packageItem.price}
                 </p>
