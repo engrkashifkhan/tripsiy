@@ -106,7 +106,7 @@ function PackagesSection() {
 
               {/* Content */}
               <div className="px-5 py-3 pb-5">
-                <h3 className="text-xl font-semibold">{item.name}</h3>
+                <h3 className="text-xl font-semibold block">{item.name}</h3>
                 <p className="text-gray-600">{item.days}</p>
                 <p className="text-gray-500 text-sm mt-1">{item.desc}</p>
 
