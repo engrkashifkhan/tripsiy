@@ -8,7 +8,7 @@ import DestinationsPage from './pages/Destinations/DestinationsPage'
 import PackagesPage from './pages/packages/PackagesPage'
 import ServicesPage from './pages/services/ServicesPage'
 import ContactPage from './pages/contact/ContactPage'
-import PackageDetails from './components/Packages/PackagesDetail'   // ✅ ADD THIS IMPORT
+import PackageDetails from './components/Packages/PackagesDetail'  
 import ScrollToTop from './components/scroll//ScrollToTop' 
 
 function App() {

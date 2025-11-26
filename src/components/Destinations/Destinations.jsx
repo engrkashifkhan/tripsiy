@@ -180,8 +180,8 @@ function PackagesSection() {
                   <h3 className="text-xl font-semibold">{item.name}</h3>
                   <p className="text-gray-600">{item.days}</p>
 
-                  <Link to={`/packages`}>
-                  <button className="mt-3 px-6 bg-[rgba(244,156,11,1)] hover:bg-orange-300 text-white py-2 rounded-lg font-medium transition">
+                  <Link className="flex justify-center items-center" to={`/packages`}>
+                  <button className=" mt-3 px-6 bg-[rgba(244,156,11,1)] hover:bg-orange-300 text-white py-2 rounded-lg font-medium transition">
                     View Packages
                   </button>
                   </Link>

@@ -135,7 +135,7 @@ export default function FilterPage() {
                 <div className="flex justify-center mt-4">
                   <button
                     onClick={() => navigate(`/package/${item.id}`)}
-                    className="px-6 py-1 bg-[rgba(244,156,11,1)] hover:bg-orange-600 text-white rounded-lg"
+                    className="mt-3 px-6 bg-[rgba(244,156,11,1)] hover:bg-orange-300 text-white py-2 rounded-lg font-medium transition"
                   >
                     View Details
                   </button>

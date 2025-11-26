@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[linear-gradient(285.12deg,#FFF8EF_28.12%,#F8E0B0_71.88%)] text-black py-12 px-6 md:px-16">
+    <footer className="bg-[linear-gradient(285.12deg,#FFF8EF_28.12%,#F8E0B0_71.88%)] text-black py-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* ---------- COLUMN 1: LOGO + DESCRIPTION ---------- */}
