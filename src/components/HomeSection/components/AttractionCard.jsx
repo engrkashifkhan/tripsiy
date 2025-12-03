@@ -26,14 +26,20 @@ function StarRating({ rating }) {
 const AttractionCard = ({ attraction }) => {
   const navigate = useNavigate();
 
+  const handleClick = () => {
+    navigate(`/attraction/${attraction.id}`);
+  };
+
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer">
+    <div 
+      className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer"
+      onClick={handleClick}
+    >
       {/* Image */}
       <img
         src={attraction.image}
         alt={attraction.name}
-        className="w-full h-44 object-cover cursor-pointer"
-        onClick={() => navigate(`/attraction/${attraction.id}`)}
+        className="w-full h-44 object-cover"
       />
 
       {/* Content */}
@@ -46,7 +52,7 @@ const AttractionCard = ({ attraction }) => {
           <p className="text-sm text-gray-700">
             {attraction.duration ? `${attraction.duration} hrs` : ''}
           </p>
-          <p className="text-lg font-bold text-orange-300">
+          <p className="text-lg font-bold text-orange-600">
             {attraction.price === 0 ? 'FREE' : `$${attraction.price}`}
           </p>
         </div>
@@ -57,8 +63,8 @@ const AttractionCard = ({ attraction }) => {
         {/* Button */}
         <div className="flex justify-center mt-4">
           <button
-            onClick={() => navigate(`/attraction/${attraction.id}`)}
-            className="mt-3 px-6 bg-[rgba(244,156,11,1)] hover:bg-orange-300 text-white py-2 rounded-lg font-medium transition"
+            onClick={handleClick}
+            className="mt-3 px-6 bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg font-medium transition"
           >
             View Details
           </button>
