@@ -10,6 +10,11 @@ import ServicesPage from './pages/services/ServicesPage'
 import ContactPage from './pages/contact/ContactPage'
 import PackageDetails from './components/Packages/PackagesDetail'  
 import ScrollToTop from './components/scroll//ScrollToTop' 
+// import CityDestinations from './components/HomeSection/pages/CityDestinations'
+import CityAttractionsPage from './components/HomeSection/pages/CityAttractionPage'
+import AttractionDetailPage from './components/HomeSection/pages/AttractionDetailPage'
+import ActivityCarousel from './components/HomeSection/activityindubai/components/ActivityCarusel'
+import ActivityDetail from './components/HomeSection/activityindubai/pages/ActivityDetail'
 
 function App() {
   return (
@@ -23,6 +28,14 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<MainSection />} />
+            {/* activityindubai from */}
+             <Route path="/dubaiactivity" element={<ActivityCarousel />} />
+            <Route path="/activity/:id" element={<ActivityDetail />} />
+            {/* to */}
+            {/* from  */}
+            <Route path="/city/:cityName" element={<CityAttractionsPage />} />
+        <Route path="/attraction/:id" element={<AttractionDetailPage />} />
+            {/* <Route path="/city/:cityId" element={<CityDestinations />} /> */}
             <Route path="/about" element={<AboutPage />} />
             <Route path="/destination" element={<DestinationsPage />} />
             <Route path="/packages" element={<PackagesPage />} />
